@@ -26,9 +26,11 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/bailey/')
+def bailey():
+    return render_template("turner.html")
+
 if __name__=="__main__":
     app.run(debug=True)
 
-@app.route('/Bailey/')
-def Bailey():
-    return render_template("Turner.html")
+
